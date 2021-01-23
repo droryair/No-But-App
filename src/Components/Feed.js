@@ -2,6 +2,10 @@ import { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import '../App.css'
 import { Login } from './Login'
+import {TWbutton} from '../TailwindVars/TailwindVars.json'
+
+
+
 export function Feed() {
     const history = useHistory()
 
@@ -19,7 +23,7 @@ export function Feed() {
 
         <>
             <h1>This is the Feed page</h1>
-            <button onClick={moveBack}>  back </button>
+            <button className={TWbutton} onClick={moveBack}>  back </button>
         </>
 
     )

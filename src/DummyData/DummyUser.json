@@ -1,0 +1,18 @@
+{
+    "first_name": "Jouhn",
+    "last-name": "Doe",
+    "location": "Tel-Aviv",
+    "avatar": "https://icon-library.com/images/free-person-icon/free-person-icon-1.jpg",
+    "email": "johndoe@site.com",
+    "challenges": 
+        [
+            {
+                "interest": "sports",
+                " types": [
+                    "running",
+                    "weights"
+                ],
+                "difficulty": "low"
+            }
+        ]
+}

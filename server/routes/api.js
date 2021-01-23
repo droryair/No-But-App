@@ -1,5 +1,6 @@
 const express = require('express')
 const User = require('../models/User')
+const Location = require('../models/Location')
 const router = express.Router()
 
 
@@ -35,6 +36,18 @@ router.get("/users", async function(req,res){
       res.status(404).send("user not found")
     }
   })
+
+
+  router.post(`/locationsData`,async function(req,res){
+    const locationsArr = req.body 
+    const loc = new Location ({
+      locationsData:locationsArr
+    })
+    await loc.save()
+    console.log(loc)
+    res.end()
+  })
+
 
   // router.post("/activity", async function(req,res){
   //   try{

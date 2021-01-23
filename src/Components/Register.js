@@ -1,6 +1,7 @@
 import { useHistory } from 'react-router-dom'
 import '../App.css'
 import axios from 'axios'
+import {TWbutton} from '../TailwindVars/TailwindVars.json'
 
 export function Register (){
     const history = useHistory ()
@@ -16,7 +17,8 @@ export function Register (){
     return(
         <div>
             <h1>This is the Registeration page</h1>
-            <button onClick={moveBack}>  back </button>
+            <button className={TWbutton} onClick={moveBack}>  back </button>
+            <button className={TWbutton}  onClick={()=>moveToComponent('')}>Home</button>
         </div>
     )
 }
